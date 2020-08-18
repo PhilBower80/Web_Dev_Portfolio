@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,mFAAI",
+    "sources": [
+        "styles.scss",
+        "partials/_config.scss",
+        "partials/_main.scss",
+        "partials/_media.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
