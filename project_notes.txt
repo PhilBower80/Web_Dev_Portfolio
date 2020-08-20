@@ -1,1 +1,3 @@
-created file structure
+checked media queries using developer tools and resolved a few issues as well as adding padding/margin to various elements.
+
+added projects html and css.

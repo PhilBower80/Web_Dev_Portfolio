@@ -1,0 +1,86 @@
+@media only screen and (max-width: 769px) {
+	.container {
+		width: 80%;
+		// max-width: 769px;
+	}
+
+	header {
+		nav {
+			.burger-container {
+				display: block;
+			}
+
+			.nav-menu {
+				display: none;
+			}
+		}
+		.hero {
+			.hero-text {
+				// h1,
+				// h2,
+				// h3 {
+				//     margin: 0;
+				// }
+
+				h1 {
+					font-size: 3rem;
+				}
+				h2 {
+					font-size: 2rem;
+				}
+
+				p {
+					margin-top: 3rem;
+					font-size: 0.75rem;
+					line-height: 1.5rem;
+				}
+			}
+		}
+	}
+
+	.about-me {
+		.about-content {
+			flex-direction: column;
+			.profile-image {
+				img {
+					max-width: 200px;
+				}
+			}
+		}
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	// Contact me
+
+	.contact-me {
+		.contact-container {
+			.order-1 {
+				order: 2;
+			}
+
+			.order-2 {
+				order: 1;
+			}
+		}
+	}
+
+	.github-link {
+		a {
+			flex-direction: column;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	// Contact me
+
+	.contact-me {
+		.form-row {
+			flex-direction: column;
+		}
+	}
+}
