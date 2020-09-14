@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&family=Merriweather:wght@300;400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,7 +21,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: #3b60c5;
 }
 
 /* selected link */
@@ -31,7 +30,7 @@ a:active {
 }
 
 section {
-  margin-bottom: 5rem;
+  padding: 2rem 0 1rem 0;
 }
 
 .container {
@@ -42,9 +41,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -84,28 +80,39 @@ section {
   color: black;
 }
 
+.fa-linkedin {
+  color: #2867b2;
+}
+
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#816dd8), to(#0f4c81));
-  background-image: linear-gradient(to bottom, #816dd8, #0f4c81);
-  height: 100vh;
-  margin-bottom: 5rem;
-  font-family: 'Fira Sans', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #0f4c81;
+  opacity: 0.8;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
 }
 
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0;
 }
 
 header nav .burger-container {
@@ -120,6 +127,7 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0;
+  font-size: 1.2rem;
 }
 
 header nav ul li {
@@ -130,36 +138,14 @@ header nav ul li i {
   padding-right: 0.5rem;
 }
 
-header .hero {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-top: 20vh;
-  height: calc(100% - 98px);
-  background: url(../../img/undraw_code_thinking_1jeh.svg);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: bottom right;
+.scroll-down .trigger-menu-wrapper {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
 }
 
-header .hero .hero-text h1,
-header .hero .hero-text h2,
-header .hero .hero-text h3 {
-  margin: 0;
-}
-
-header .hero .hero-text h1 {
-  font-size: 6rem;
-}
-
-header .hero .hero-text h2 {
-  font-size: 3rem;
-}
-
-header .hero .hero-text p {
-  margin-top: 5rem;
-  font-size: 1.75rem;
-  line-height: 3rem;
+.scroll-up .trigger-menu-wrapper {
+  -webkit-transform: none;
+          transform: none;
 }
 
 .burger {
@@ -200,10 +186,68 @@ header .hero .hero-text p {
   top: -8px;
 }
 
+.hero-section {
+  background: url(../../img/background.jpg);
+  height: 100vh;
+  font-family: 'Fira Sans', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-section:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: #444;
+  opacity: 0.8;
+}
+
+.hero-section .hero {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 20vh;
+  height: calc(100% - 98px);
+}
+
+.hero-section .hero .hero-text {
+  z-index: 2;
+}
+
+.hero-section .hero .hero-text h1,
+.hero-section .hero .hero-text h2,
+.hero-section .hero .hero-text h3 {
+  margin: 0;
+}
+
+.hero-section .hero .hero-text h1 {
+  font-size: 6rem;
+}
+
+.hero-section .hero .hero-text h2 {
+  font-size: 3rem;
+}
+
+.hero-section .hero .hero-text p {
+  margin-top: 5rem;
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+
+.hero-section .hero .hero-text span {
+  color: #3b60c5;
+}
+
 .about-me {
   height: 100%;
   background-color: #fff;
   color: #0f4c81;
+  height: 100vh;
+  width: 100%;
 }
 
 .about-me .about-content {
@@ -294,7 +338,8 @@ header .hero .hero-text p {
 .projects {
   background-color: #0f4c81;
   color: #fff;
-  padding-top: 5rem;
+  height: 100vh;
+  width: 100%;
 }
 
 .projects ul.project-links {
@@ -335,6 +380,16 @@ header .hero .hero-text p {
      object-fit: cover;
 }
 
+.projects .github-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 .projects .github-link a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,6 +406,8 @@ header .hero .hero-text p {
 .contact-me {
   background-color: #fff;
   color: #0f4c81;
+  height: 100vh;
+  width: 100%;
 }
 
 .contact-me label,
@@ -421,8 +478,14 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   background-color: #0f4c81;
   color: #fff;
+}
+
+.text-effect {
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 @media only screen and (max-width: 769px) {
