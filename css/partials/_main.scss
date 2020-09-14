@@ -166,7 +166,7 @@ header {
 // Hero section
 
 .hero-section {
-	background: url(../../img/background.jpg);
+	background: url(../img/background.jpg);
 	height: 100vh;
 	font-family: 'Fira Sans', sans-serif;
 	background-repeat: no-repeat;
@@ -402,4 +402,8 @@ footer {
 .text-effect {
 	color: #fff;
 	mix-blend-mode: difference;
+}
+
+.test-div-link {
+	background-color: violet;
 }
