@@ -85,7 +85,7 @@ if(isset($_POST['submit'])){
 
     
     
-    header('Location: contactForm.php?success=true');
+    header('Location: index.php?success=true');
     }
 
 } // end of post check
@@ -94,7 +94,7 @@ if(isset($_POST['submit'])){
 <?php 
 $pageTitle = 'Philip Bower | Contact me';
 
-include('inc/head.php'); 
+// include('inc/head.php'); 
 // include('inc/header.php');
 
 // include('inc/connection.php');
@@ -111,7 +111,7 @@ include('inc/head.php');
 
     <div class="container contact-container">
 
-        <form class="order-1" action="contactForm.php" method="POST">
+        <form class="order-1" action="index.php" method="POST">
             <div class="form-row">
                 <div class="form-group">
                     <label for="forename">Forename:</label>
@@ -175,7 +175,3 @@ include('inc/head.php');
 
     </div>
 </section>
-
-<?php 
-include('inc/footer.php'); 
-?>

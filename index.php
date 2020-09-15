@@ -33,7 +33,8 @@
             <p>I am a self motivated, proactive, adaptable and determined person who enjoys
                 working in a team environment or equally solo. I have worked in customer
                 service / sales support for the past 20 years and have gained excellent
-                communication and interpersonal skills. I have long held a desire to work in IT
+                communication and interpersonal skills.</p>
+            <p>I have long held a desire to work in IT
                 and further to gaining an opportunity to join the Netmatters Scion Coalition
                 scheme I have trained in front and back end technologies to realise my dream.
                 I am now looking to continue this journey as a Junior Web Developer in the
@@ -155,10 +156,17 @@
     </div>
 </section>
 
-<div class="test-div-link">
-    <a href="contactForm.php">Contact me</a>
+<div>
+    <?php
+    include 'contactForm.php';
+    ?>
 </div>
 
+<!-- <div class="contact-me-link">
+    <ul>
+        <li><a href="contactForm.php">Contact me</a></li>
+    </ul>
+</div> -->
 
 
 <?php include('inc/footer.php'); ?>

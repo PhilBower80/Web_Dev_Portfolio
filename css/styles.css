@@ -6,6 +6,7 @@
 body {
   font-family: 'Merriweather', serif;
   color: #fff;
+  background: #fff;
 }
 
 /* unvisited link */
@@ -280,6 +281,7 @@ header nav ul li i {
       -ms-flex: 2 1 0px;
           flex: 2 1 0;
   padding-left: 2rem;
+  font-size: 1.5rem;
 }
 
 .grid {
@@ -338,8 +340,6 @@ header nav ul li i {
 .projects {
   background-color: #0f4c81;
   color: #fff;
-  height: 100vh;
-  width: 100%;
 }
 
 .projects ul.project-links {
@@ -406,8 +406,6 @@ header nav ul li i {
 .contact-me {
   background-color: #fff;
   color: #0f4c81;
-  height: 100vh;
-  width: 100%;
 }
 
 .contact-me label,
@@ -483,13 +481,8 @@ footer {
   color: #fff;
 }
 
-.text-effect {
-  color: #fff;
-  mix-blend-mode: difference;
-}
-
-.test-div-link {
-  background-color: violet;
+.contact-me-link {
+  background-color: red;
 }
 
 @media only screen and (max-width: 769px) {
